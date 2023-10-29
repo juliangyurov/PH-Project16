@@ -23,7 +23,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let oslo = Capital(title: "Oslo", coordinate: CLLocationCoordinate2D(latitude: 59.95, longitude: 10.75), info: "Founded over a thousand years ago.")
         let paris = Capital(title: "Paris", coordinate: CLLocationCoordinate2D(latitude: 48.8567, longitude: 2.3508), info: "Often called the City of Light")
         let rome = Capital(title: "Rome", coordinate: CLLocationCoordinate2D(latitude: 41.9, longitude: 12.5), info: "Has a whole country inside it.")
-        let washington = Capital(title: "Washington DC", coordinate: CLLocationCoordinate2D(latitude: 38.895111, longitude: -77.036667), info: "Named after George himself.")
+        let washington = Capital(title: "Washington", coordinate: CLLocationCoordinate2D(latitude: 38.895111, longitude: -77.036667), info: "Named after George himself.")
         
 //        mapView.addAnnotation(london)
 //        mapView.addAnnotation(oslo)
@@ -59,9 +59,14 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let placeName = capital.title
         let placeInfo = capital.info
         
-        let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default))
-        present(ac, animated: true)
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "wikiWebView") as? WikiWebViewController {
+            vc.url = URL(string: "https://www.wikipedia.org/wiki/\(placeName ?? "Sofia")")
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+//        let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
+//        ac.addAction(UIAlertAction(title: "OK", style: .default))
+//        present(ac, animated: true)
     }
     
     @objc func chooseMapType() {

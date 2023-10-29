@@ -43,6 +43,37 @@
             </objects>
             <point key="canvasLocation" x="1026.7175572519084" y="-27.464788732394368"/>
         </scene>
+        <!--Wiki Web View Controller-->
+        <scene sceneID="0Jd-Tj-fNe">
+            <objects>
+                <viewController storyboardIdentifier="wikiWebView" id="Nyr-ML-qxI" customClass="WikiWebViewController" customModule="Project16" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7qt-rj-lna">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4L3-OX-XRt">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xPT-cY-SAf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4L3-OX-XRt" firstAttribute="leading" secondItem="xPT-cY-SAf" secondAttribute="leading" id="Rme-oc-4gR"/>
+                            <constraint firstItem="4L3-OX-XRt" firstAttribute="trailing" secondItem="xPT-cY-SAf" secondAttribute="trailing" id="Swb-Sg-wtt"/>
+                            <constraint firstItem="4L3-OX-XRt" firstAttribute="top" secondItem="xPT-cY-SAf" secondAttribute="top" id="cy1-ZU-ant"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4L3-OX-XRt" secondAttribute="bottom" constant="-34" id="oc6-sC-zIr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzH-s8-eGL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858.7786259541983" y="-19.014084507042256"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="fmf-8H-VzK">
             <objects>

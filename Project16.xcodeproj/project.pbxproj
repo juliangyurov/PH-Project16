@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35AB9A612AEECF56009894C6 /* WikiWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9A602AEECF56009894C6 /* WikiWebViewController.swift */; };
 		35ADBEE02AEE62E600EE7DF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ADBEDF2AEE62E600EE7DF4 /* AppDelegate.swift */; };
 		35ADBEE22AEE62E600EE7DF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ADBEE12AEE62E600EE7DF4 /* SceneDelegate.swift */; };
 		35ADBEE42AEE62E600EE7DF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ADBEE32AEE62E600EE7DF4 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35AB9A602AEECF56009894C6 /* WikiWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiWebViewController.swift; sourceTree = "<group>"; };
 		35ADBEDC2AEE62E600EE7DF4 /* Project16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35ADBEDF2AEE62E600EE7DF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35ADBEE12AEE62E600EE7DF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				35ADBEE82AEE62E900EE7DF4 /* Assets.xcassets */,
 				35ADBEEA2AEE62E900EE7DF4 /* LaunchScreen.storyboard */,
 				35ADBEED2AEE62E900EE7DF4 /* Info.plist */,
+				35AB9A602AEECF56009894C6 /* WikiWebViewController.swift */,
 			);
 			path = Project16;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				35ADBEE02AEE62E600EE7DF4 /* AppDelegate.swift in Sources */,
 				35ADBEF42AEE76FE00EE7DF4 /* Capital.swift in Sources */,
 				35ADBEE22AEE62E600EE7DF4 /* SceneDelegate.swift in Sources */,
+				35AB9A612AEECF56009894C6 /* WikiWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
