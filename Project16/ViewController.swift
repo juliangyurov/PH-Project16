@@ -26,6 +26,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
 //        mapView.addAnnotation(paris)
 //        mapView.addAnnotation(rome)
 //        mapView.addAnnotation(washington)
+        //mapView.mapType = .satellite
         
         mapView.addAnnotations([sofia,london,oslo,paris,rome,washington])
     }
