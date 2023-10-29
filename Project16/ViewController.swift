@@ -10,9 +10,13 @@ import UIKit
 class ViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet var mapView: MKMapView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "MapType", style: .plain, target: self, action: #selector(chooseMapType))
         
         let sofia = Capital(title: "Sofia", coordinate: CLLocationCoordinate2D(latitude: 42.698334, longitude: 23.319941), info: "Home of the Developer")
         let london = Capital(title: "London", coordinate: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), info: "Home to the 2012 Summer Olympics")
@@ -58,6 +62,32 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
+    }
+    
+    @objc func chooseMapType() {
+        let ac = UIAlertController(title: "Select MapType", message: nil, preferredStyle: .actionSheet)
+        ac.addAction(UIAlertAction(title: "Satellite", style: .default,handler: setMapType(action:) ))
+        ac.addAction(UIAlertAction(title: "Standart", style: .default,handler: setMapType(action:) ))
+        ac.addAction(UIAlertAction(title: "Hybrid", style: .default,handler: setMapType(action:) ))
+        ac.addAction(UIAlertAction(title: "HybridFlyover", style: .default,handler: setMapType(action:) ))
+        ac.addAction(UIAlertAction(title: "SatelliteFlyover", style: .default,handler: setMapType(action:) ))
+        present(ac, animated: true)
+    }
+    @objc func setMapType(action: UIAlertAction) {
+        if action.title == "Satellite" {
+            mapView.mapType = .satellite
+        }else if action.title == "Standart"{
+            mapView.mapType = .standard
+        }else if action.title == "Hybrid"{
+            mapView.mapType = .hybrid
+        }else if action.title == "HybridFlyover"{
+            mapView.mapType = .hybridFlyover
+        }else if action.title == "SatelliteFlyover"{
+            mapView.mapType = .satelliteFlyover
+        }
+        else{
+            mapView.mapType = .standard
+        }
     }
 }
 
