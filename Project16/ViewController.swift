@@ -76,6 +76,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         ac.addAction(UIAlertAction(title: "Hybrid", style: .default,handler: setMapType(action:) ))
         ac.addAction(UIAlertAction(title: "HybridFlyover", style: .default,handler: setMapType(action:) ))
         ac.addAction(UIAlertAction(title: "SatelliteFlyover", style: .default,handler: setMapType(action:) ))
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         present(ac, animated: true)
     }
     @objc func setMapType(action: UIAlertAction) {
