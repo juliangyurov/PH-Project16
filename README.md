@@ -6,9 +6,9 @@ Written by [Paul Hudson](https://www.hackingwithswift.com/about)  ![twitter16](h
 
 - Setting up
 
-- Up and running with MapKit
+- Up and running with `MapKit`
 
-- Annotations and accessory views: MKPinAnnotationView
+- Annotations and accessory views: `MKPinAnnotationView`
 
 - Wrap up
 
