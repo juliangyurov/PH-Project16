@@ -2,7 +2,7 @@
 Written by [Paul Hudson](https://www.hackingwithswift.com/about)  ![twitter16](https://github.com/juliangyurov/PH-Project6a/assets/13259596/445c8ea0-65c4-4dba-8e1f-3f2750f0ef51)
   [@twostraws](https://twitter.com/twostraws)
 
-**Description:** Teach users about geography while you learn about MKMapView and annotations.
+**Description:** Teach users about geography while you learn about `MKMapView` and annotations.
 
 - Setting up
 
